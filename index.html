@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(12, 121, 136);
+        }
+        .logo{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        header {
+            background-color: rgb(207, 198, 212); 
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hwb(56 5% 9%); 
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-size: 23px;
+        }
+        nav a:hover {
+            background-color: #dbcd0a;
+        }
+        .banner {
+            background-color: dbcd0a;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            width: 100%;
+            height: 15%;
+            position: absolute;
+            animation: moveBanner 10s linear infinite;
+        }
+        @keyframes moveBanner {
+            0% {
+                left: -100%; 
+            }
+            50% {
+                left: 100%; 
+            }
+            100% {
+                left: -100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner">
+        <h1>Marketing & social media</h1> 
+    </header>
+
+ <img src="WhatsApp Image 2024-11-14 at 8.27.35 PM.jpeg" class="logo" alt="logo">
+ 
+            
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#aliados">Aliados Estratégicos</a>
+        <a href="#contacto">Contacto</a>
+        <a href=""></a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Nos apasiona ayudarte a hacer crecer tu negocio. En la agencia UNICA, somos especialistas en estrategias de marketing digital que impulsan tus resultados y aumentan tu visibilidad en el mundo online. Descubre cómo podemos llevar tu marca al siguiente nivel con soluciones personalizadas y efectivas.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Estrategia Digital 📈💡📊
+            Diseñamos planes personalizados para impulsar tu negocio en el mundo digital.
+            
+            SEO y Posicionamiento Web 🔍📈🌐
+            Optimizamos tu sitio para que destaque en los motores de búsqueda.
+            
+            Gestión de Redes Sociales 📱💬📸
+            Creamos y gestionamos contenido que conecta y genera comunidad.
+            
+            Publicidad Digital💻🎯📢
+            Campañas pagadas en Google, Facebook y más para maximizar tu alcance.
+            
+            Email Marketing✉️📬📩
+            Mensajes efectivos que convierten suscriptores en clientes leales.
+            
+            .</p>
+    </section>
+
+    <section id="aliados">
+        <h2>Aliados Estratégicos</h2>
+        <p>Carlos Naranjo – Community Manager 📲: Experto en gestionar comunidades y aumentar la interacción en redes sociales.
+            Celeste Caselles – Diseñadora Gráfica 🎨: Creativa y dedicada a dar vida visual a las ideas de tu marca.
+            Cathe al Rescate – Programadora 💻: Especialista en desarrollo web y soluciones tecnológicas a medida.s.</p>
+    </section>
+
+    
+            </p>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web con Contenedores</title>
+    <style>
+        
+        body {
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+      
+        header {
+            background-color: #dfe20b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .contenedor-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .imagen {
+            width: 300px;
+            height: 200px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .imagen img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .formulario-contacto {
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .formulario-contacto label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .formulario-contacto input, .formulario-contacto textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .formulario-contacto button {
+            width: 100%;
+            padding: 10px;
+            background-color: #dfe20b;
+            
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .formulario-contacto button:hover {
+            background-color: #dfe20b;
+            ;
+        }
+        
+        .contenedor-video {
+            padding: 20px;
+            text-align: center;
+        }
+        .contenedor-video iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            padding: 25px;
+        }
+        .contenedor-ubicacion{
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contenedor-ubicacion iframe {
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            max-width: 560px;
+            height: auto;
+        }
+        .icons {
+            display: flex;         
+            gap: 15px;   
+            align-items: center; 
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            color: white;          
+            font-size: 24px;      
+            text-decoration: none;  
+        }
+        .icon-image {
+            width: 24px;  
+            height: 24px; 
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Servicios</h1>
+    </header>
+
+    
+    <section class="contenedor-imagenes">
+        <div class="imagen">
+            <img src="1.jpeg" alt="Imagen 1">
+        </div>
+        <div class="imagen">
+            <img src="2.jpeg" alt="Imagen 2">
+        </div>
+        <div class="imagen">
+            <img src="3.jpeg" alt="Imagen 3">
+        </div>
+        
+
+    </section>
+
+    
+    <section class="formulario-contacto">
+        <h2>Contacto</h2>
+        <form action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+   
+    <section class="contenedor-video">
+        <header>
+        <h2>Marketing Digital</h2>
+        </header>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v17EXDu3t0E?si=U19iLTVhzUMWEj2l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </section>
+    <section class="contenedor-ubicacion">
+    <header>
+    <h2>Ubicación</h2>
+    </header>
+    <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1961.4681330853407!2d-73.10714712048527!3d7.1159648529575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f51b6fb8337%3A0xd3884e59e480ab6e!2sCentro%20Comercial%20Quinta%20Etapa!5e0!3m2!1ses!2sco!4v1731636867669!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <header>
+        <div class="icons">
+            <a href="https://wa.me/1234567890" class="icon" target="_blank">
+                <img src="/whatsapp.png" alt="WhatsApp" class="icon-image">
+                <span class="icon-text">+573219870564</span>
+            </a>
+            <a href="https://www.example.com" class="icon" target="_blank">
+                <img src="/web.png" alt="Página Web" class="icon-image">
+                <span class="icon-text">ww.mipaginita.com</span>
+            </a>
+            <a href="mailto:example@example.com" class="icon">
+                <img src="/email.png" alt="Correo Electrónico" class="icon-image">
+                <span class="icon-text">mipagina@email.com</span>
+            </a>
+        </div>
+    </header>
+
+</body>
+</html>
